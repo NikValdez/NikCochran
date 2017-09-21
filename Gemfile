@@ -17,6 +17,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'twitter', '~> 6.1'
 gem 'activeadmin'
+gem 'active_skin', '~> 0.0.12'
 gem 'devise', '~> 4.3'
 
 
