@@ -23,6 +23,7 @@ gem 'devise', '~> 4.3'
 
 
 
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.6'
@@ -30,6 +31,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'guard-rspec', require: false
+  gem 'rails-controller-testing'
 
 
 end
