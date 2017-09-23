@@ -533,13 +533,13 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../images/home/slider-bg.png) 0 100% repeat-x;
+  background: url(../home/slider-bg.png) 0 100% repeat-x;
   position: relative;
 }
 
 #home-slider .main-slider {
   position: relative;
-  height: 450px;
+  height: 470px;
 }
 
 #home-slider .slide-text{
@@ -611,7 +611,7 @@ ul.sub-menu {
 
 
 #home-slider h1{
-  margin-top: 100px;
+  margin-top: 30px;
   margin-bottom: 25px;
 }
 
@@ -642,7 +642,7 @@ ul.sub-menu {
 }
 
 #action {
-  background-image: url(../images/home/tour-bg.png);
+  background-image: url(../home/basketball.png);
   background-color: #fbfafa;
   background-repeat: repeat-x;
   height: 157px;
@@ -750,7 +750,7 @@ ul.sub-menu {
 }
 
 #page-breadcrumb {
-  background-image: url(../images/home/tour-bg.png);
+  background-image: url(../home/basketball.png);
   background-color: #fbfafa;
   background-repeat: repeat-x;
   height: 130px;
@@ -1022,10 +1022,10 @@ ul.elements li > i{
 }
 
 
-.portfolio-single:hover .portfolio-view{
+.portfolio-single:hover {
   display: block;
-  -webkit-animation: fadeInUp 400ms;
-  animation: fadeInUp 400ms;
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 #portfolio .row{
@@ -2722,4 +2722,15 @@ span.stButton_gradient,
   -webkit-box-shadow: 0 0 0 5px rgba(0,0,0,.1) inset;
   border-radius: 100%;
   margin: 10px 0;
+}
+
+
+
+h2 {
+  text-align: center;
+}
+
+.p {
+  text-align: center;
+  padding-top: 130px;
 }
