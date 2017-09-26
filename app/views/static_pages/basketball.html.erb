@@ -23,6 +23,10 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <%= render 'shared/modal_close'%>
 </head><!--/head-->
 
 <body>
@@ -44,101 +48,8 @@
         </div>
    </section>  
 
-    <%= render 'shared/basketball_modal' %> 
-
-                <div class="portfolio-items">
-                    <div class="col-sm-6 portfolio-item branded logos">
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-single">
-                                <!-- <div class="portfolio-thumb"> -->
-                                    <iframe width="550" height="300" src="https://www.youtube.com/embed/X5etBoimQMU?rel=0" frameborder="0" allowfullscreen></iframe> 
-                                </div>
-                            </div>
-                           <a href="#" data-toggle="modal" data-target="#videoModal">
-                            <div class="portfolio-info">
-                            <h2>Vs Gonzaga</h2>
-                              </a>
-                          </div>
-                          <!-- Modal -->
-                            <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel">
-                              <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                  </div>
-                                  <div class="modal-body">
-                                     <iframe width="550" height="300" src="https://www.youtube.com/embed/X5etBoimQMU?rel=0" frameborder="0" allowfullscreen></iframe>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                    </div>
-                
-
-
-
-
-                    <div class="col-sm-6 portfolio-item mockup folio">
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-single">
-                                <!-- <div class="portfolio-thumb"> -->
-                                    <iframe width="550" height="300" src="https://www.youtube.com/embed/gAAjQoq_nbE?rel=0" frameborder="0" allowfullscreen></iframe> 
-                                </div>
-                            </div>
-                            <div class="portfolio-info">
-                                <h2>Sailing Vivamus</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 portfolio-item mockup folio">
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-single">
-                                <!-- <div class="portfolio-thumb"> -->
-                                    <iframe src="https://player.vimeo.com/video/28636773?title=0&byline=0&portrait=0" width="550" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                </div>
-                            </div>
-                            <!-- </div> -->
-                            <div class="portfolio-info">
-                                <h2>Sailing Vivamus</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 portfolio-item mockup folio">
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-single">
-                                <!-- <div class="portfolio-thumb"> -->
-                                    <iframe width="550" height="300" src="https://www.youtube.com/embed/CERn7ftKQEM?rel=0" frameborder="0" allowfullscreen></iframe>
-                                </div>                               
-                            </div>
-                            <div class="portfolio-info">
-                                <h2>Sailing Vivamus</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 portfolio-item mockup folio">
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-single">
-                                <!-- <div class="portfolio-thumb"> -->
-                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTwoPointsBball%2Fvideos%2F866447253368803%2F&show_text=0&width=560" width="550" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                                </div>                               
-                            </div>
-                            <div class="portfolio-info">
-                                <h2>Sailing Vivamus</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 portfolio-item mockup folio">
-                        <div class="portfolio-wrapper">
-                            <div class="portfolio-single">
-                                <!-- <div class="portfolio-thumb"> -->
-                                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FTwoPointsBball%2Fvideos%2F10152125981509517%2F&show_text=0&width=560" width="550" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-                                </div>                              
-                            </div>
-                            <div class="portfolio-info">
-                                <h2>Sailing Vivamus</h2>
-                            </div>
-                        </div>
+    <%= render 'shared/basketball_modal' %>
+     <%= render 'shared/video_modal' %>                    
                     </section>
                     </div>
                 </div>
@@ -165,11 +76,11 @@
     <%= render 'shared/footer' %>
 
 
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
+    <script type="text/javascript" src="js/main.js"></script>   -->
 </body>
 </html>

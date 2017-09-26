@@ -2739,8 +2739,6 @@ span.stButton_gradient,
   margin: 10px 0;
 }
 
-
-
 h2 {
   text-align: center;
 }
@@ -2751,8 +2749,23 @@ h2 {
 }
 
 
+ .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background:transparent;
+    border:none;
+    outline:none;
+}
+.modal-content iframe {
+    border:none;
+    padding:0;
+    margin:0;
+}
 
-.modal-content  {
-   background: black;
-   border: none;
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-content1 {
+  background: #c0deed;
 }
