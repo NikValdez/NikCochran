@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 feature 'visiting home page' do 
-	scenario 'user sees text Hi Im Nik' do 
+	scenario 'user sees text Hey, Im Nik' do 
 		visit root_path
-		expect(page).to have_text("Hi, I'm Nik")
+		expect(page).to have_text("Hey, I'm Nik")
 	end
 end
 
