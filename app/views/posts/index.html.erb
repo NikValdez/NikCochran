@@ -1,29 +1,89 @@
 <p id="notice"><%= notice %></p>
+<%= render 'shared/header' %>
 
-<h1>Posts</h1>
+<body>
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Thoughts</h1>
+                            <p>About things that interest me</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+ 
+    <section id="blog" class="padding-top">
+       <% @posts.each do |post| %>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-7">
+                    <div class="row">
+                         <div class="col-sm-12 col-md-12">
+                            <div class="single-blog single-column">
+                                <div class="post-thumb">
+                                      <%=image_tag("blog/7.jpg", class: "img-responsive") %>
+                                    <div class="post-overlay">
+                                       <span class="uppercase"><a href="#"><%= post.created_at.strftime("%d") %><br><small><%= post.created_at.strftime("%b") %></small></a></span>
+                                       
+                                   </div>
+                                </div>
+                                <div class="post-content overflow">
+                                    <h2 class="post-title bold"><a href="blogdetails.html"><%= post.title %></a></h2>
+                                    <h3 class="post-author"><a href="#">Posted by Nik Cochran</a></h3>
+                                    <p><%= sanitize(post.body.html_safe.truncate(500)) %></p>
+                                    <% if current_user == AdminUser %>
+                                    <td><%= link_to 'Show', post %></td>
+                                    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+                                    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                    <% else %>
+                                    <% end %>
+                                    <a href="#" class="read-more">View More</a>
+                                    <div class="post-bottom overflow">
+                                        <ul class="nav navbar-nav post-nav">
+                                            <li><a href="#"><i class="fa fa-tag"></i>Creative</a></li>
+                                            <li><a href="#"><i class="fa fa-heart"></i>32 Love</a></li>
+                                            <li><a href="#"><i class="fa fa-comments"></i>3 Comments</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% end %>
+                    <div class="blog-pagination">
+                        <ul class="pagination">
+                          <li><a href="#">left</a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li class="active"><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li><a href="#">9</a></li>
+                          <li><a href="#">right</a></li>
+                        </ul>
+                    </div>
+                 </div>                    
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <%= link_to 'New Post', new_post_path %>
+    <!--/#blog-->
+<%= render 'shared/footer' %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+    <!-- <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>    -->
+</body>
+</html>
