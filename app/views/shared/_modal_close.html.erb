@@ -56,55 +56,56 @@
       $(document).ready(function(){
         /* Get iframe src attribute value i.e. YouTube video url
         and store it in a variable */
-        var url = $("#kansasVideo").attr('src');
+        var url = $("#dsonVideo").attr('src');
         
         /* Assign empty url value to the iframe src attribute when
         modal hide, which stop the video playing */
-        $("#kansasModal").on('hide.bs.modal', function(){
-            $("#kansasVideo").attr('src', '');
+        $("#dsonModal").on('hide.bs.modal', function(){
+            $("#dsonVideo").attr('src', '');
         });
         
         /* Assign the initially stored url back to the iframe src
         attribute when modal is displayed again */
-        $("#kansasModal").on('show.bs.modal', function(){
-            $("#kansasVideo").attr('src', url);
+        $("#dsonModal").on('show.bs.modal', function(){
+            $("#dsonVideo").attr('src', url);
         });
     });
 
        $(document).ready(function(){
         /* Get iframe src attribute value i.e. YouTube video url
         and store it in a variable */
-        var url = $("#kansasVideo").attr('src');
+        var url = $("#spainVideo").attr('src');
         
         /* Assign empty url value to the iframe src attribute when
         modal hide, which stop the video playing */
-        $("#kansasModal").on('hide.bs.modal', function(){
-            $("#kansasVideo").attr('src', '');
+        $("#spainModal").on('hide.bs.modal', function(){
+            $("#spainVideo").attr('src', '');
         });
         
         /* Assign the initially stored url back to the iframe src
         attribute when modal is displayed again */
-        $("#kansasModal").on('show.bs.modal', function(){
-            $("#kansasVideo").attr('src', url);
+        $("#spainModal").on('show.bs.modal', function(){
+            $("#spainVideo").attr('src', url);
         });
     });
 
-        $(document).ready(function(){
+          $(document).ready(function(){
         /* Get iframe src attribute value i.e. YouTube video url
         and store it in a variable */
-        var url = $("#kansasVideo").attr('src');
+        var url = $("#offenseVideo").attr('src');
         
         /* Assign empty url value to the iframe src attribute when
         modal hide, which stop the video playing */
-        $("#kansasModal").on('hide.bs.modal', function(){
-            $("#kansasVideo").attr('src', '');
+        $("#offenseModal").on('hide.bs.modal', function(){
+            $("#offenseVideo").attr('src', '');
         });
         
         /* Assign the initially stored url back to the iframe src
         attribute when modal is displayed again */
-        $("#kansasModal").on('show.bs.modal', function(){
-            $("#kansasVideo").attr('src', url);
+        $("#offenseModal").on('show.bs.modal', function(){
+            $("#offenseVideo").attr('src', url);
         });
     });
+
 </script>
 

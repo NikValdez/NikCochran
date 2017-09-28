@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  resources :posts
   get 'static_pages/basketball'
 
   get 'static_pages/nerdvestor'

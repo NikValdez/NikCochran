@@ -20,6 +20,7 @@ gem 'activeadmin'
 gem 'active_skin', '~> 0.0.12'
 gem 'devise', '~> 4.3'
 gem 'bootsnap', require: false
+gem 'trix'
 
 
 group :development, :test do
