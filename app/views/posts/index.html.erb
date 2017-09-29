@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <%= render 'shared/header' %>
 
 <body>
@@ -37,13 +36,14 @@
                                     <h2 class="post-title bold"><a href="blogdetails.html"><%= post.title %></a></h2>
                                     <h3 class="post-author"><a href="#">Posted by Nik Cochran</a></h3>
                                     <p><%= sanitize(post.body.html_safe.truncate(500)) %></p>
-                                    <% if current_user == AdminUser %>
+                                    <% if current_admin_user %>
                                     <td><%= link_to 'Show', post %></td>
                                     <td><%= link_to 'Edit', edit_post_path(post) %></td>
                                     <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                     <%= link_to 'New Post', new_post_path %>
                                     <% else %>
                                     <% end %>
-                                    <a href="#" class="read-more">View More</a>
+                                    <%= link_to 'View Post', post, class: "read-more"%>
                                     <div class="post-bottom overflow">
                                         <ul class="nav navbar-nav post-nav">
                                             <li><a href="#"><i class="fa fa-tag"></i>Creative</a></li>
@@ -76,7 +76,6 @@
             </div>
         </div>
     </section>
-    <%= link_to 'New Post', new_post_path %>
     <!--/#blog-->
 <%= render 'shared/footer' %>
 

@@ -21,6 +21,8 @@ gem 'active_skin', '~> 0.0.12'
 gem 'devise', '~> 4.3'
 gem 'bootsnap', require: false
 gem 'trix'
+gem 'rails-assets-sweetalert2', '~> 5.1.1', source: 'https://rails-assets.org'
+gem 'sweet-alert2-rails'
 
 
 group :development, :test do

@@ -1,14 +1,62 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<%= render 'shared/header' %>
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body.html_safe %>
-</p>
+<section id="page-breadcrumb">
+<div class="vertical-center sun">
+     <div class="container">
+        <div class="row">
+            <div class="action">
+                <div class="col-sm-12">
+                    <h1 class="title">Thoughts</h1>
+                    <p>About things that interest me</p>
+                </div>                                                                                
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--/#page-breadcrumb-->
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<section id="blog-details" class="padding-top">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="row">
+                 <div class="col-md-12 col-sm-12">
+                    <div class="single-blog blog-details two-column">
+                        <div class="post-thumb">
+                              <%=image_tag("blog/7.jpg", class: "img-responsive") %>
+                            <div class="post-overlay">
+                               <span class="uppercase"><a href="#"><%= @post.created_at.strftime("%d") %><br><small><%= @post.created_at.strftime("%b") %></small></a></span>
+                            </div>
+                        </div>
+                        <div class="post-content overflow">
+                            <h2 class="post-title bold"><a href="#"><%= @post.title %></a></h2>
+                            <h3 class="post-author"><a href="#">Nik Cochran</a></h3>
+                            <p><%= @post.body.html_safe %></p>             
+			            </div>
+			        </div>
+			    </div>
+			</div>
+	</section>
+	<% if current_admin_user %>
+		<%= link_to 'Edit', edit_post_path(@post) %> |
+		<%= link_to 'Back', posts_path %>
+	<% else %>
+	<% end %>
+
+	<%= render 'shared/footer' %>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
