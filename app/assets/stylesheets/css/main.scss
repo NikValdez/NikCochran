@@ -401,6 +401,7 @@ ul.sub-menu {
 #message {
   height: 110px;
   resize: none;
+  margin-left: 25px;
 }
 
 .bottom > h2 {
@@ -2970,4 +2971,87 @@ $blue: #2194E0;
 
 
 /* signup/in styling */
+
+$green: #1abc9c;
+
+.sign-header, input::-webkit-input-placeholder {
+  font-family: 'roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+.sign-header {
+  height: 100px;
+  width: 100%;
+  font-size: 18px;
+  background: darken($green, 4%);
+  color: white;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+
+
+form {
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+  .sign-header {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}
+
+input {
+  margin: 40px 25px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px $green;
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $green 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: darken($green, 20%);
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+    &::-webkit-input-placeholder {
+      color: $green;
+      font-size: 11px;
+      transform: translateY(-20px);
+      visibility: visible !important;
+    }
+  }
+}
+
+.actions {
+  border: none;
+  background: $green;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+  &:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+  }
+}
+
+
+label {
+  font-weight: 100;
+  margin-left: 10px;
+}
+
+#main-contact-form {
+  box-shadow: none;
+}
 
