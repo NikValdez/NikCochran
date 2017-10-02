@@ -2779,10 +2779,8 @@ trix-editor {
 }
 
 #post_title {
-  width: 500px;
-  height: 40px;
-  position: absolute;
-  left: 30%;
+  margin: 5px;
+  padding: 0;
 }
 
 .post-header {
@@ -2941,6 +2939,7 @@ $blue: #2194E0;
 
   &.btn--border.btn--primary {
     border: 1px solid #0099ae;
+    margin-left: 25px;
   }
 
   &:before {
@@ -3055,3 +3054,20 @@ label {
   box-shadow: none;
 }
 
+
+/* pagination */
+
+.pagination {
+  margin-bottom: 10em;
+}
+
+
+/* posts pages */
+
+form#new_post {
+    box-sizing: 0;
+    margin: 0;
+    box-shadow: none;
+    padding-bottom: 0;
+    border-radius: 0;
+}

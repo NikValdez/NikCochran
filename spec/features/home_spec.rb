@@ -16,3 +16,4 @@ feature 'visiting home page' do
 		expect(page).to have_css('.img-responsive')
 	end 
 end 
+

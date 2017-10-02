@@ -1,3 +1,4 @@
+ <% if current_admin_user %>
 <form>
 <h2 class="sign-header">Sign up</h2>
 
@@ -29,3 +30,12 @@
 
 <%= render "devise/shared/links" %>
 </form>
+<% else %>
+<div class="container">
+<h1>Sorry but there ain't nothing to sign up for at this time. But thanks anyways</h1>
+<div class="button">
+<%= link_to 'Home', root_path %>
+</div>
+</div>
+
+<% end %>
