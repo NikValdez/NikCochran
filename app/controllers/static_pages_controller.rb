@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
 
   def writings
   end
+
+  def social
+  end
 end
