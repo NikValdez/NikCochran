@@ -2987,3 +2987,23 @@ form#new_post {
     padding-bottom: 0;
     border-radius: 0;
 }
+
+/* Nerd logo */
+
+.nerd-logo {
+  width: 50%;
+  height: 50%;
+  -webkit-animation: flipInY 3.5s;
+  animation: flipInY 3.5s;
+  animation-delay: 2s;
+}
+
+#nerd-breadcrumb {
+    background-image: url(/assets/nerd-banner.png); 
+    background-repeat: repeat-x;
+    height: 130px;
+    background-position: center;
+    display: table;
+    position: static;
+    width: 100%;
+}
