@@ -2994,3 +2994,22 @@ form#new_post {
 .home-about {
   margin-top: 15px;
 }
+
+
+/* Social */
+
+.juicer-feed h1.referral a {
+  display: none !important;
+}
+
+
+#social-banner {
+  background-image: url(../home/social-banner.png);
+  background-color: #fbfafa;
+  background-repeat: repeat-x;
+  height: 130px;
+  background-position: center;
+  display: table;
+  position: static;
+  width: 100%;
+}
