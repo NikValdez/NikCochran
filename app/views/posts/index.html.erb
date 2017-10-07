@@ -26,7 +26,7 @@
                          <div class="col-sm-12 col-md-12">
                             <div class="single-blog single-column">
                                 <div class="post-thumb">
-                                      <%=image_tag("blog/7.jpg", class: "img-responsive") %>
+                                      <%= image_tag post.image.url(:large) %>
                                     <div class="post-overlay">
                                        <span class="uppercase"><a href="#"><%= post.created_at.strftime("%d") %><br><small><%= post.created_at.strftime("%b") %></small></a></span>
                                        
