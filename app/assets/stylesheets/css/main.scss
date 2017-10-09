@@ -81,6 +81,7 @@
   #action .col-sm-5{
     position: absolute;
 
+
     top: 0;
     height: 100%;
     right: 0;
@@ -620,7 +621,7 @@ ul.sub-menu {
 }
 
 #action {
-  background-image: url(../home/basketball.png);
+  background-image: url(../home/social-banner.png);
   background-color: #fbfafa;
   background-repeat: repeat-x;
   height: 157px;
@@ -661,7 +662,7 @@ ul.sub-menu {
 }
 
 .action h1{
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 .action p{
@@ -1128,7 +1129,7 @@ ul.elements li > i{
 
 .portfolio-pagination{
   text-align: center;
-  
+  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 90px;
 }
@@ -1659,6 +1660,14 @@ a.read-more:hover{
   padding: 20px 20px 0;
 }
 
+
+#blog-banner {
+  padding-bottom: 10px;
+  background-image: url(../home/footer.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: contain;
+}
 
 /*****************************
 Blog with right sidebar
@@ -3014,6 +3023,70 @@ form#new_post {
   width: 100%;
 }
 
-/* paperclip */
+
+
+
+ .social-button {
+  margin-top: 50px;
+  margin-right: 70px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.2px;
+  padding: 12px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.social-button{
+  color: #0099ae;
+}
+
+.social-button {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.social-button {
+  transition-property: color;
+  transition-duration: 0.5s;
+
+  &.social-button{
+    border: 1px solid #0099ae;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0099ae;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: white;
+
+    &:before {
+      transform: scaleX(1);
+      transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+    }
+  }
+}
 
 
