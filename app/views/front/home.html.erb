@@ -12,7 +12,7 @@
                                  <span>I</span><span>'</span><span>M</span><span>&nbsp;</span><span>N</span><span>I</span><span>K</span>
                         </a>
                     </div>
-                        <p class="home-about">A web developer, quantitative investor and former professional basketball player. This site is well... about me(a tad conceited perhaps, because honestly who really cares)</p>
+                        <p class="home-about">A web developer, quantitative investor and former professional basketball player. This site is well... about me (a tad conceited perhaps, because honestly who really cares)</p>
                         <div class="button">Continue on!</div>
                     </div>
                     <%=image_tag("nikcochran1.png", class: "nikcochran") %>
@@ -116,22 +116,9 @@
      <!--/#features-->
     <%= render 'shared/footer' %>
 <script src="assets/home.js"></script>
+<script src="assets/chatBot.js"></script>
 
-
-<script>
- function open_chatbox()
- {
- $('#chat').fadeOut(500);
- $('#chatBox').fadeIn(1000);
- }
- function closeChat()
- {
- $('#chatBox').fadeOut(500);
- $('#chat').fadeIn(1000);
- }
- </script>
-
- <div id="chat" onClick="open_chatbox();"> Talk to Robot Assistant </div>
+ <div id="chat" onClick="open_chatbox();">Ask Nikbot<%=image_tag("chatBotLogo.png", class: "chatBotLogo") %></div>
  <div id="chatBox"><div onclick="closeChat()" id="close"></div> <br><br>
     <iframe
         width="350"
@@ -139,10 +126,6 @@
         src="https://console.api.ai/api-client/demo/embedded/340ed3a0-6f14-4622-bfcf-5ad651e401de">
     </iframe>
 </div>
-
-
-
-
 
 </body>
 </html>
