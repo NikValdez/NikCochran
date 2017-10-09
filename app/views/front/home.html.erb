@@ -118,5 +118,36 @@
 <script src="assets/home.js"></script>
 
 
+<script>
+ function open_chatbox()
+ {
+ $('#chat').fadeOut(500);
+ $('#chatBox').fadeIn(1000);
+ }
+ function closeChat()
+ {
+ $('#chatBox').fadeOut(500);
+ $('#chat').fadeIn(1000);
+ }
+ </script>
+
+ <div id="chat" onClick="open_chatbox();"> Talk to Robot Assistant </div>
+ <div id="chatBox"><div onclick="closeChat()" id="close"></div> <br><br>
+    <iframe
+        width="350"
+        height="430"
+        src="https://console.api.ai/api-client/demo/embedded/340ed3a0-6f14-4622-bfcf-5ad651e401de">
+    </iframe>
+</div>
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+

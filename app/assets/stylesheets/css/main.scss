@@ -3090,3 +3090,48 @@ form#new_post {
 }
 
 
+/* Chat Bot */
+
+#chat
+ {
+ position: fixed;
+ bottom: 0px;
+ width:200px;
+ height:auto;
+ padding: 10px;
+
+ background:#088A68;
+ color:#EDEDED;
+ text-align:center;
+ font-family: Cambria;
+ font-size:20px;
+ right:15px;
+ cursor:pointer;
+ }
+ #chatBox
+ {
+ display:none;
+ position: fixed;
+ bottom: 77px;
+ width:400px;
+ height:400px;
+ color:#FF7700;
+ text-align:center;
+ font-family:Cambria;
+ font-size:20px;
+ right:15px;
+ cursor:pointer;
+ }
+ #close
+ {
+ position:absolute;
+ width:15px;
+ height:15px;
+ padding:6px 5px 10px 5px;
+ text-align:center;
+ background:rgba(0,0,0,0.8);
+ color:#FF7700;
+ font-family:Cambria;
+ right:0px;top:0px;
+ }
+
