@@ -757,7 +757,7 @@ ul.sub-menu {
 }
 
 .tour-button {
-  background-image: url(../images/home/tour-icon2.png);
+  background-image: url(../social-icons.png);
   height: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1009,6 +1009,7 @@ ul.elements li > i{
   transform: scale(1.1);
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
+  box-shadow: 0 0 11px grey; 
 }
 
 
@@ -2926,6 +2927,7 @@ $blue: #2194E0;
 .btn--animated {
   transition-property: color;
   transition-duration: 0.5s;
+  background: transparent;
 
   &.btn--border.btn--primary {
     border: 1px solid #0099ae;
@@ -3027,7 +3029,7 @@ form#new_post {
 
 
  .social-button {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-right: 70px;
   position: relative;
   display: inline-block;
@@ -3174,6 +3176,6 @@ form#new_post {
 .popover {
     width: 600px; 
     height: 300px;
-    background-image: url(../home/footer.png);
-   
+    background-image: url(../kits.png);
+
 }

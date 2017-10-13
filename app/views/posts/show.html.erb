@@ -33,7 +33,7 @@
                         <div class="post-content overflow">
                             <h2 class="post-title bold"><a href="#"><%= @post.title %></a></h2>
                             <h3 class="post-author"><a href="#">Nik Cochran</a></h3>
-                            <p><%= @post.body.html_safe %></p>             
+                            <p><%= sanitize @post.body %></p>             
 			            </div>
 			        </div>
 			    </div>

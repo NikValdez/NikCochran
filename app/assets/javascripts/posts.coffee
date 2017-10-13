@@ -13,7 +13,7 @@ $ ->
     file = attachment.file
     form = new FormData
     form.append 'Content-Type', file.type
-    form.append 'image[image]', file
+    form.append 'posts[image]', file
     xhr = new XMLHttpRequest
     xhr.open 'POST', '/images', true
 
