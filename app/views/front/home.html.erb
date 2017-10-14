@@ -33,7 +33,7 @@
                             <%=image_tag("lap-top.png") %>
                         </div>
                         <h2>Web Developer</h2>
-                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
+                        <p>I'm a web developer focusing on Ruby, Rails and Javascript. Currently I'm learning React. Fairly new to the game but always looking to improve.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -42,7 +42,7 @@
                             <%=image_tag("stock-chart.png") %>
                         </div>
                         <h2>Quantitative Investor</h2>
-                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
+                        <p>I'm a long-term quantitative investor. I use strategies that have be shown to work over extended periods. Focused primarily on value, momentum and trend.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
@@ -51,7 +51,7 @@
                             <%=image_tag("basketball-icon.png") %>
                         </div>
                         <h2>Basketball Player</h2>
-                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
+                        <p>I'm a former basketball player. I played Division One basketball for Davidson College and then went on to play professionally in Spain, Holland and Italy.</p>
                     </div>
                 </div>
             </div>
@@ -78,18 +78,18 @@
             </div>
         </div>
    </section>
-  
-
     <section id="features">
         <div class="container">
             <div class="row">
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <%=image_tag("image1.png", class: "img-responsive") %> 
+                        <%= link_to static_pages_nerdvestor_path do %>
+                            <%=image_tag("nerd-logo.png", class: "img-responsive") %> 
+                        <% end %>
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Pork belly leberkas cow short ribs capicola pork loin. Doner fatback frankfurter jerky meatball pastrami bacon tail sausage. Turkey fatback ball tip, tri-tip tenderloin drumstick salami strip steak.</P>
+                        <h2>Educating Investors</h2>
+                        <P>Nerdvestor currates the top investing research, blog posts and video content from around the web to help investors improve their investing and make better decisions.</P>
                     </div>
                 </div>
                 <div class="single-features">
@@ -98,12 +98,16 @@
                         <P>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</P>
                     </div>
                     <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <%=image_tag("image2.png", class: "img-responsive") %> 
+                        <%= link_to static_pages_writings_path do %>
+                            <%=image_tag("pen-image.png", class: "img-responsive") %> 
+                        <% end %>
                     </div>
                 </div>
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <%=image_tag("image3.png", class: "img-responsive") %> 
+                        <%= link_to posts_path do %>
+                            <%=image_tag("light-bulb.png", class: "img-responsive") %> 
+                        <% end %>
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                         <h2>Experienced and Enthusiastic</h2>
