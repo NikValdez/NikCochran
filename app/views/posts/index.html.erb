@@ -21,36 +21,34 @@
        <% @posts.each do |post| %>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-sm-7">
-                    <div class="row">
-                         <div class="col-sm-12 col-md-12">
-                            <div class="single-blog single-column">
-                                <div class="post-thumb">
-                                      <%= image_tag post.image.url(:large) %>
-                                    <div class="post-overlay">
-                                       <span class="uppercase"><a href="#"><%= post.created_at.strftime("%d") %><br><small><%= post.created_at.strftime("%b") %></small></a></span>
-                                       
-                                   </div>
-                                </div>
-                                <div class="post-content overflow">
-                                    <h2 class="post-title bold"><a href="blogdetails.html"><%= post.title %></a></h2>
-                                    <h3 class="post-author"><a href="#">Posted by Nik Cochran</a></h3>
-                                    <p><%= sanitize(post.body.html_safe.truncate(500)) %></p>
-                                    <% if current_admin_user %>
-                                    <td><%= link_to 'Show', post %></td>
-                                    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-                                    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                                     <%= link_to 'New Post', new_post_path %>
-                                    <% else %>
-                                    <% end %>
-                                    <%= link_to 'View Post', post, class: "read-more"%>
-                                </div>
-                            </div>
-                        </div>
-                        <% end %>
-                        <div class="page-item">
-                         <%= paginate @posts %>
-                         </div>
+            
+                       <div class="col-sm-12 col-md-12">
+                          <div class="single-blog single-column">
+                              <div class="post-thumb">
+                                    <%= image_tag post.image.url(:large), size: "900x400"%>
+                                     <h1 class="post-title bold"><%= post.title %></a></h1>
+                                  <h3 class="post-author"><a href="#">Posted by Nik Cochran</a></h3>
+                                  <div class="post-overlay">
+                                     <span class="uppercase"><a href="#"><%= post.created_at.strftime("%d") %><br><small><%= post.created_at.strftime("%b") %></small></a></span>        
+                                       </div>
+                                  </div>
+                              <div class="post-content overflow">
+                                  <p><%= sanitize(post.body.html_safe.truncate(500)) %></p>
+                                  <% if current_admin_user %>
+                                  <td><%= link_to 'Show', post %></td>
+                                  <td><%= link_to 'Edit', edit_post_path(post) %></td>
+                                  <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                                   <%= link_to 'New Post', new_post_path %>
+                                  <% else %>
+                                  <% end %>
+                                  <%= link_to 'View Post', post, class: "read-more"%>
+                              </div>
+                          </div>
+                      </div>
+                      <% end %>
+                      <div class="page-item">
+                       <%= paginate @posts %>
+                       </div>
                  </div>                    
                    
                 </div>

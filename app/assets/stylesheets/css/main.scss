@@ -1489,6 +1489,7 @@ Portfolio Details
 Blog Default
 *****************************/
 
+
 .single-blog.timeline {
   background: #FFFFFF;
   border: 1px solid #EEEEEE;
@@ -1505,6 +1506,7 @@ Blog Default
   margin: -1px -1px 0;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .timeline .post-thumb img {
@@ -1626,6 +1628,12 @@ Blog Default
 
 .post-title {
   margin-top: 0;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+  color: white;
+  font-weight: 900;
+
 }
 
 .post-title a,
@@ -1673,6 +1681,11 @@ a.read-more:hover{
 /*****************************
 Blog with right sidebar
 *****************************/
+
+
+img {
+  width: 100%
+}
 
 .single-blog{
   padding-bottom: 30px;
@@ -1749,11 +1762,6 @@ Blog with right sidebar
 Blog with right sidebar
 *****************************/
 
-.masonery_area .single-blog{}
-.masonery_area .single-blog .post-thumb{
-  height: auto;
-}
-
 .masonery_area .single-blog .post-title{
   margin-top: 5px;
 }
@@ -1762,9 +1770,6 @@ Blog with right sidebar
   font-size: 20px;
 }
 
-.masonery_area .single-blog .post-thumb img{
-  height:auto;
-}
 
 .masonery_area .single-blog .post-bottom{
   border-top:0;
