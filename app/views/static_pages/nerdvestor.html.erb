@@ -1,10 +1,6 @@
 <%= render 'shared/head' %>
-
 <body>
-
 <%= render 'shared/header' %>
-
-
     <section id="nerd-breadcrumb">
         <div class="vertical-center sun">
              <div class="container">
@@ -20,130 +16,51 @@
         </div>
    </section>
     <!--/#page-breadcrumb-->
-
     <section id="about-company">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 text-center">
                 <%=image_tag("nerdLogo.png", class: "nerd-logo")%>
                     <h1>About Nerdvestor</h1>
-                    <p>Pork chop duis eu pig, labore sausage venison. Shankle fugiat duis, filet mignon tri-tip venison beef shank ribeye<br /> aliqua cillum dolore sed do in.</p>
+                    <p>Nerdvestor was born out of a frustration of having to visit 10 or 15 different investing sites to get all the information I wanted. I decided that I would curate the best investing content from around the web and aggregate it in a single location.</p>
+                    <%= link_to "Visit Site", asset_path("http://www.nerdvestor.com/"), class: "button", target: "_blank" %> 
                 </div>
             </div>
         </div>
     </section>
-    <!--/#about-company-->
-    
     <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/icon1.png" alt="">
+                             <%=image_tag("blog-image.png") %>
                         </div>
-                        <h2>Incredibly Responsive</h2>
-                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
+                        <h2>Newest Articles</h2>
+                        <p>We search the vast array of investing blogs and articles daily, curating only the best to showcase on Nerdvestor's front page.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/icon2.png" alt="">
+                            <%=image_tag("research-image.png") %>
                         </div>
-                        <h2>Superior Typography</h2>
-                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
+                        <h2>Latest Research</h2>
+                        <p>We read the investing literature and distill what we think is useful so that you don't have to waste time reading dull white papers.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/home/icon3.png" alt="">
+                            <%=image_tag("question-image.png") %>
                         </div>
-                        <h2>Swift Page Builder</h2>
-                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
+                        <h2>Learning Resources</h2>
+                        <p>We search around the web for the top investing resources we can find. From valuations, to hedge fund letters, if we think it can make you a better investor we want it on Nerdvestor.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--/#services-->
-
-    <section id="action">
-        <div class="vertical-center">
-             <div class="container">
-                <div class="row">
-                    <div class="action count">
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="7000" data-speed="3000" data-from="0"></h1>   
-                            <h3>Happy Clients</h3>
-                        </div>
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="12" data-speed="3000" data-from="0"></h1>   
-                            <h3>Years in Business</h3> 
-                        </div>
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="432" data-speed="3000" data-from="0"></h1> 
-                            <h3>Cups of Coffee</h3>
-                        </div>
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="145" data-speed="3000" data-from="0"></h1> 
-                            <h3>Total Project</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-    <!--/#action-->
-
-    <section id="company-information" class="padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="about-us">
-                    <div class="col-sm-7 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-                        <h2 class="bold">About Triangle</h2>
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <img src="images/aboutus/6.png" class="img-responsive" alt="">
-                            </div>
-                            <div class="col-sm-7">
-                                <h3 class="top-zero">Who we are</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. <br> <br> Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-5 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-                        <div class="our-skills">
-                            <h2 class="bold">Our Skills</h2>
-                            <div class="single-skill">
-                                <h3>Design</h3>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  data-transition="35">35%</div>
-                                </div>
-                            </div>
-                            <div class="single-skill">
-                                <h3>HTML</h3>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  data-transition="80">80%</div>
-                                </div>
-                            </div>
-                            <div class="single-skill">
-                                <h3>PHP</h3>
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  data-transition="60">60%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--/#company-information-->
-
-    <!--/#team-->
 <%= render 'shared/footer' %> 
-   
 </body>
 </html>

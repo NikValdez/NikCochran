@@ -1,7 +1,7 @@
 
 <%= render 'shared/header' %>
 
-<section id="page-breadcrumb">
+<section id="blog-banner">
 <div class="vertical-center sun">
      <div class="container">
         <div class="row">
@@ -25,7 +25,7 @@
                  <div class="col-md-12 col-sm-12">
                     <div class="single-blog blog-details two-column">
                         <div class="post-thumb">
-                              <%= image_tag @post.image.url(:large), size: "900x400"%>
+                              <%= image_tag @post.image.url(:large), size: "950x400"%>
                             <div class="post-overlay">
                                <span class="uppercase"><a href="#"><%= @post.created_at.strftime("%d") %><br><small><%= @post.created_at.strftime("%b") %></small></a></span>
                             </div>
