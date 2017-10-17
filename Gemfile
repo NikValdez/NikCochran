@@ -25,7 +25,7 @@ gem 'rails-assets-sweetalert2', '~> 5.1.1', source: 'https://rails-assets.org'
 gem 'sweet-alert2-rails'
 gem 'kaminari', :git => 'https://github.com/kaminari/kaminari' 
 gem 'paperclip', '~> 5.1'
-gem 'rails-assets-tether', source: 'https://rails-assets.org'
+gem 'execjs', '~> 2.7'
 
 
 
