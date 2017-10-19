@@ -384,7 +384,7 @@ ul.sub-menu {
 
 #footer {
   padding-bottom: 10px;
-  background-image: url(../home/footer.png);
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/footer.png");
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: contain;
@@ -530,7 +530,7 @@ ul.sub-menu {
 *******Home Page******
 **************************/
 #home-slider {
-  background: url(../home/slider-bg.png) 0 100% repeat-x;
+  background: url("https://s3.amazonaws.com/nikcochran.me/slider-bg.png") 0 100% repeat-x;
   position: relative;
 }
 
@@ -621,7 +621,7 @@ ul.sub-menu {
 }
 
 #action {
-  background-image: url(../home/social-banner.png);
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/social-banner.png");
   background-color: #fbfafa;
   background-repeat: repeat-x;
   height: 157px;
@@ -729,7 +729,7 @@ ul.sub-menu {
 }
 
 #page-breadcrumb {
-  background-image: url(../home/basketball.png);
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/basketball.png");
   background-color: #fbfafa;
   background-repeat: repeat-x;
   height: 130px;
@@ -757,7 +757,7 @@ ul.sub-menu {
 }
 
 .tour-button {
-  background-image: url(../social-icons.png);
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/social-icons.png");
   height: 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1673,7 +1673,7 @@ a.read-more:hover{
 
 #blog-banner {
   padding-bottom: 10px;
-  background-image: url(../home/footer.png);
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/footer.png");
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: contain;
@@ -2994,7 +2994,7 @@ form#new_post {
 }
 
 #nerd-breadcrumb {
-    background-image: url(/assets/nerd-banner.png); 
+    background-image: url("https://s3.amazonaws.com/nikcochran.me/nerd-banner.png"); 
     background-repeat: repeat-x;
     height: 130px;
     background-position: center;
@@ -3017,7 +3017,7 @@ form#new_post {
 
 
 #social-banner {
-  background-image: url(../home/social-banner.png);
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/social-banner.png");
   background-color: #fbfafa;
   background-repeat: repeat-x;
   height: 130px;
@@ -3185,3 +3185,19 @@ form#new_post {
 .popover-title {
   background: $blue;
 }
+
+
+/* writing */
+
+#writing-breadcrumb {
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/footer.png");
+  background-color: #fbfafa;
+  background-repeat: repeat-x;
+  height: 130px;
+  background-position: center;
+  display: table;
+  position: static;
+  width: 100%;
+}
+
+
