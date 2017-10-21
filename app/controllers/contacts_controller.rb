@@ -1,8 +1,5 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
-  before_action :set_contact
-
-  def new 
+class ContactsController < ApplicationController
+	def new 
 		@contact = Contact.new
 	end 
 
@@ -16,11 +13,4 @@ class ApplicationController < ActionController::Base
 			render :new 
 		end
 	end
-
-
-
-private
- def set_contact
-    @contact = Contact.new
- end
 end

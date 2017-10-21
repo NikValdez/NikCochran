@@ -26,6 +26,7 @@ gem 'sweet-alert2-rails'
 gem 'kaminari', :git => 'https://github.com/kaminari/kaminari' 
 gem 'paperclip', '~> 5.1'
 gem 'execjs', '~> 2.7'
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 
 
