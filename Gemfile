@@ -30,7 +30,6 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 
 
-
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails', '~> 3.6'
