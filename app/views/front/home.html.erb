@@ -1,7 +1,6 @@
 <%= render 'shared/head'%>
 <body>
    <%= render 'shared/header'%>
-
     <section id="home-slider">
         <div class="container">
             <div class="row">
@@ -23,7 +22,6 @@
         <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
     </section>
     <!--/#home-slider-->
-
     <section id="services">
         <div class="container">
             <div class="row">
@@ -118,7 +116,16 @@
         </div>
     </section>
      <!--/#features-->
-     <script src="assets/home.js"></script>
+     <script>
+     $(function() {
+    $(".button").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".single-service1").offset().top},
+            'slow');
+    });
+});
+</script>
+
     <%= render 'shared/footer' %>
 <script src="assets/chatBot.js"></script>
 
