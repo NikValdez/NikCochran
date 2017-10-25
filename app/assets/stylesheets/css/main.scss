@@ -3211,5 +3211,15 @@ label {
 
 .contact {
   text-align: center;
+  margin: 20px;
+}
+
+#contact-back-button {
+  margin: 3em;
+}
+
+.airplane {
+ -webkit-animation: zoomInLeft 1s;
+  animation: zoomInLeft 1s;
 }
 
