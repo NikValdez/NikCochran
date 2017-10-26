@@ -1,7 +1,7 @@
 <%= render 'shared/header' %>
 
 <body>
-    <section id="blog-banner">
+ <!--    <section id="blog-banner">
         <div class="vertical-center sun">
              <div class="container">
                 <div class="row">
@@ -14,14 +14,13 @@
                 </div>
             </div>
         </div>
-   </section>
+   </section> -->
     <!--/#page-breadcrumb-->
  
     <section id="blog" class="padding-top">
        <% @posts.each do |post| %>
         <div class="container">
             <div class="row">
-            
                        <div class="col-sm-12 col-md-12">
                           <div class="single-blog single-column">
                               <div class="post-thumb">
@@ -56,12 +55,19 @@
         </div>
     </section>
     <!--/#blog-->
-<%= render 'shared/footer' %>
+<footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; Nik Cochran 2017. All Rights Reserved.</p>
+                        <p>Designed by <a target="_blank" href="https://github.com/NikValdez">Nik Cochran</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <!-- <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>    -->
+  
 </body>
 </html>

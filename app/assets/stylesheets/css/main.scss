@@ -3161,11 +3161,8 @@ form#new_post {
  #close
  {
  position:absolute;
- width:15px;
- height:15px;
- padding:6px 5px 10px 5px;
  text-align:center;
- background:rgba(0,0,0,0.8);
+ background: transparent;
  color:#FF7700;
  font-family:Cambria;
  right:0px;top:0px;
@@ -3222,4 +3219,18 @@ label {
  -webkit-animation: zoomInLeft 1s;
   animation: zoomInLeft 1s;
 }
+
+
+/* Blog */
+
+#blog {
+  background: #68268c;
+}
+.single-column {
+  background: #04284a;
+  border: 30px solid #ffe600;
+}
+
+
+
 
