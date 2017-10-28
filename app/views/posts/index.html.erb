@@ -1,8 +1,25 @@
 
 <body>
-    <!--/#page-breadcrumb-->
+  <button class="js-menu menu" type="button">
+    <span class="bar"></span>
+  </button>
+
+  <nav>
+    <ul>
+      <li class="active"><a href="/">Home</a></li>
+      <li><%= link_to "Basketball Carreer", static_pages_basketball_path %></li>
+      <li><%= link_to "Nerdvestor", static_pages_nerdvestor_path %></li>
+      <li><%= link_to "Writing", static_pages_writings_path %></li> 
+      <li><%= link_to "Social", static_pages_social_path %></li>
+      <li><a href="https://github.com/NikValdez">GitHub</a></li>
+    </ul>
+  </nav>
+  <script src="assets/hamburger.js"></script>
  
     <section id="blog" class="padding-top">
+
+      <h1 id="thoughts-title">Thoughts</h1>
+
        <% @posts.each do |post| %>
         <div class="container">
             <div class="row">
