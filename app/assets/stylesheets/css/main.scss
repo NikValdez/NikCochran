@@ -114,7 +114,7 @@
   }
 
   .padding-top{
-    padding-top: 90px;
+    padding-top: 20px;
   }
 
   .padding-right{
@@ -3229,11 +3229,15 @@ label {
 /* Blog */
 
 #blog {
-  background: #68268c;
+  background: linear-gradient(to right, #8e44ad, #c0392b);
 }
 .single-column {
-  background: #04284a;
-  border: 30px solid #ffe600;
+  background: #33015E;
+  border: 50px solid #33015E;
+}
+.thin-border {
+  border: 20px solid #ffe600;
+  border-bottom: none;
 }
 
 

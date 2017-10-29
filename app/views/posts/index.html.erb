@@ -15,16 +15,17 @@
     </ul>
   </nav>
   <script src="assets/hamburger.js"></script>
- 
-    <section id="blog" class="padding-top">
+  
+    <section id="blog", class="padding-top">
 
-      <h1 id="thoughts-title">Thoughts</h1>
+     <h1 id="thoughts-title">Thoughts</h1>
 
        <% @posts.each do |post| %>
         <div class="container">
             <div class="row">
                        <div class="col-sm-12 col-md-12">
                           <div class="single-blog single-column">
+                            <div class="thin-border">
                               <div class="post-thumb">
                                     <%= image_tag post.image.url(:large), size: "950x400"%>
                                      <h1 class="post-title bold"><%= post.title %></a></h1>
@@ -45,6 +46,7 @@
                                   <%= link_to 'View Post', post, class: "read-more"%>
                               </div>
                           </div>
+                          </div>
                       </div>
                       <% end %>
                       <div class="page-item">
@@ -56,20 +58,5 @@
             </div>
         </div>
     </section>
-    <!--/#blog-->
-<footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="copyright-text text-center">
-                        <p>&copy; Nik Cochran 2017. All Rights Reserved.</p>
-                        <p>Designed by <a target="_blank" href="https://github.com/NikValdez">Nik Cochran</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-  
 </body>
 </html>
