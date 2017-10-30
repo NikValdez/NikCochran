@@ -8,3 +8,12 @@
  $('#chatBox').fadeOut(500);
  $('#chat').fadeIn(1000);
  }
+
+
+
+$(document).ready(function(){
+    $("#dismiss").click(function(){
+        $("#chat").hide();
+        $("#dismiss").hide();
+    });
+});

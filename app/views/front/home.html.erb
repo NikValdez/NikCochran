@@ -129,7 +129,9 @@
     <%= render 'shared/footer' %>
 <script src="assets/chatBot.js"></script>
 
- <div id="chat" onClick="open_chatbox();">Ask NikBot<%=image_tag("chatBotLogo.png", class: "chatBotLogo") %></div>
+ <div id="chat" onClick="open_chatbox();">Ask NikBot<%=image_tag("chatBotLogo.png", class: "chatBotLogo") %>
+ </div>
+ <div id="dismiss"><i class="fa fa-times fa-2x" aria-hidden="true"></i></div>
  <div id="chatBox"><div onclick="closeChat()" id="close"><i class="fa fa-window-close fa-2x" aria-hidden="true"></i></div> <br><br>
     <iframe
         width="350"
