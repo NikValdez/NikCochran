@@ -1504,6 +1504,7 @@ Blog Default
 
 .post-thumb{
   margin: -1px -1px 0;
+  background: #33015E;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -1588,6 +1589,10 @@ Blog Default
 
 .post-content{
   padding: 20px 0;
+  font-family: portrait;
+  font-size: 2rem;
+  color: white;
+  line-height: 1.25;
 }
 
 .timeline-date .btn-common{
@@ -3243,8 +3248,9 @@ label {
   border: 50px solid #33015E;
 }
 .thin-border {
-  border: 20px solid #ffe600;
+  border: 15px solid #ffe600;
   border-bottom: none;
+  padding: 30px;
 }
 
 
@@ -3365,7 +3371,16 @@ nav {
   color: white;
   font-family: Maria;
   font-size: 4em;
-  margin-bottom: 1em;
+  }
+
+  #thoughts-sub {
+    text-align: center;
+    color: white;
+    font-family: Maria;
+    font-size: 2em;
+    margin-right: 8em;
+    line-height: 0.20;
+   
   }
 
 
