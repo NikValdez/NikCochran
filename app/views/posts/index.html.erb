@@ -2,7 +2,7 @@
   <button class="js-menu menu" type="button">
     <span class="bar"></span>
   </button>
-  <nav>
+  <nav class="ham">
     <ul>
       <li class="active"><a href="/">Home</a></li>
       <li><%= link_to "Basketball Carreer", static_pages_basketball_path %></li>
@@ -52,12 +52,12 @@
                <%= link_to 'New Post', new_post_path %>
               <% else %>
               <% end %>
-            
               <%= link_to 'View Post', post, class: "read-more"%>
                <hr>
            <% end %>
-
-           
+           <div class="paginate">
+            <%= paginate @posts %>
+          </div>
                   
     <!-- Footer -->
     <div class="col-sm-12">

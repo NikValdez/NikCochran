@@ -1138,6 +1138,7 @@ ul.elements li > i{
 .pagination li{
   display: inline-block;
   margin: 0 10px;
+  text-align: center;
 }
 
 .pagination li a{
@@ -2960,6 +2961,9 @@ $blue: #2194E0;
 
 .pagination {
   margin-bottom: 10em;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -3301,7 +3305,7 @@ html {
   }
 }
 
-nav {
+.ham {
   width: 250px;
   height: 95%;
   background: #FF0048;
