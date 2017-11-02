@@ -5,7 +5,6 @@ class PostsController < InheritedResources::Base
 	  @posts = Post.page(params[:page]).per(5).order(created_at: :desc)
 	end
 
-
   private
 
     def post_params

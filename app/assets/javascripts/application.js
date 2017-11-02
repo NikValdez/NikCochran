@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs
+//= require turbolinks
 //= require trix
 //= require sweetalert2
 //= require sweet-alert2-rails
