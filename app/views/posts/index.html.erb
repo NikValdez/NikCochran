@@ -1,10 +1,11 @@
 <body>
+  <script src="assets/hamburger.js"></script>
   <button class="js-menu menu" type="button">
     <span class="bar"></span>
   </button>
   <nav class="ham">
     <ul>
-      <li class="active"><a href="/">Home</a></li>
+      <li data-turbolinks="false"><%= link_to "Home", root_path%></li>
       <li><%= link_to "Basketball Carreer", static_pages_basketball_path %></li>
       <li><%= link_to "Nerdvestor", static_pages_nerdvestor_path %></li>
       <li><%= link_to "Writing", static_pages_writings_path %></li> 
@@ -12,15 +13,16 @@
       <li><a href="https://github.com/NikValdez">GitHub</a></li>
     </ul>
   </nav>
-  <script src="assets/hamburger.js"></script>
+
       <!-- Page Header -->
-    <header class="masthead" style="background-image: url('assets/home-bg.jpg')">
+    <header class="masthead" style="background-image: url('assets/nikLighthouse.png')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 mx-auto">
             <div class="site-heading">
-              <h1 class="blog-heading">My Thoughts</h1>
+              <a class="link link--yaku">
+                <h1 class="blog-heading"><span>M</span><span>y</span><span>&nbsp;</span><span>T</span><span>h</span><span>o</span><span>u</span><span>g</span><span>h</span><span>t</span><span>s</span></h1></a>
               <span class="subheading">Incoherent Ramblings About Things That Interest Me</span>
             </div>
           </div>
@@ -34,14 +36,14 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 mx-auto">
           <div class="post-preview">
-            <a href="#">
+            <%= link_to post do %>
               <h2 class="post-title">
                 <%= post.title %>
               </h2>
               <h3 class="post-subtitle">
                 <%= sanitize(post.body.html_safe.truncate(100)) %>
               </h3>
-            </a>
+            <% end %>
             <p class="post-meta">Posted by Nik Cochran on
               <%= post.created_at.strftime("%m/%d/%y")%></p>
           </div>
