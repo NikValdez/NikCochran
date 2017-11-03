@@ -1,19 +1,7 @@
 <body>
-  <script src="assets/hamburger.js"></script>
-  <button class="js-menu menu" type="button">
-    <span class="bar"></span>
-  </button>
-  <nav class="ham">
-    <ul>
-      <li data-turbolinks="false"><%= link_to "Home", root_path%></li>
-      <li><%= link_to "Basketball Carreer", static_pages_basketball_path %></li>
-      <li><%= link_to "Nerdvestor", static_pages_nerdvestor_path %></li>
-      <li><%= link_to "Writing", static_pages_writings_path %></li> 
-      <li><%= link_to "Social", static_pages_social_path %></li>
-      <li><a href="https://github.com/NikValdez">GitHub</a></li>
-    </ul>
-  </nav>
-
+<%= render 'shared/menuNav'%>
+   
+<%= render 'shared/blogNav.js'%>
       <!-- Page Header -->
     <header class="masthead" style="background-image: url('assets/nikLighthouse.png')">
       <div class="overlay"></div>

@@ -764,6 +764,7 @@ ul.sub-menu {
   width: 100%;
   left: 0;
   background-position: 151px 4px;
+  margin-left: 45em;
 }
 
 .about-image {
@@ -2760,6 +2761,7 @@ trix-editor {
   width: 900px;
   height: 600px;
   margin: auto;
+  overflow: scroll;
 }
 
 #post_title {
@@ -3229,118 +3231,7 @@ label {
 
 
 
-/* Blog Hamburger menu*/
 
-html {
-  font-size: 10px; // Change me!
-}
-
-.menu {
-  transition: 0.1s transform linear;
-  position: relative;
-  background: 0;
-  float: left;
-  margin: 2rem;
-  height: 2.7rem;
-  width: 3.5rem;
-  outline: 0;
-  padding: 0;
-  border: 0;
- 
-}
-
-.bar {
-  &, &::before, &::after {
-    transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
-    position: absolute;
-    background: white;
-    margin: auto;
-    width: 100%;
-    height: 0.5rem;
-    content: '';
-    top: 50%;
-    left: 0;
-    z-index: 10000;
-
-  }
-
-  & {
-    margin-top: -0.2rem
-  }
-
-  &::before {
-    top: -1.2rem;
-  }
-
-  &::after {
-    top: 1.2rem;
-  }
-
-  &::before,
-  &::after {
-    transform: rotate(0deg);
-  }
-
-  .active & {
-    background: 0;
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    &::before,
-    &::after {
-      top: 0;
-    }
-
-    &,
-    &::before,
-    &::after {
-      transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
-    }
-  }
-}
-
-.ham {
-  width: 250px;
-  height: 95%;
-  background: #FF0048;
-  position: fixed;
-  transform: translateX(-250px);
-  transition: transform 0.6s cubic-bezier(.56,.1,.34,.91);
-  padding-top: 6.2rem;
-  z-index: 999;
-
-  .menu-open & {
-    transform: translateX(0);
-    width: 400px;
-  }
-  
-  ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    
-    li {
-      padding: 20px 5px;
-      font-size: 40px;
-      font-weight: 800;
-      text-align: center;
-      font: maria;
-      border: 1px solid black;
-      margin: 15px;
-      
-      &:hover {
-        background: white;
-        color: #FF0048;
-      }
-    }
-  }
-}
   #thoughts-title {
   text-align: center;
   color: white;
@@ -3358,5 +3249,203 @@ html {
   }
 
 
+/* Menu */
+
+
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+
+.transparent{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  margin:0;
+}
+.menu-cont {
+  position:fixed;
+  float:left;
+  top:4%;
+  display: block;
+  cursor: pointer;
+  padding:4px;
+  cursor:pointer;
+  z-index:200;
+}
+
+.menu-txt {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  font-family:'Righteous';
+  text-overflow:ellipsis;
+  background-image:-webkit-linear-gradient(white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor:pointer;
+}
+
+.overlay {
+  position: fixed;
+  background:rgba(0,0,0,0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index:100;
+}
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  -webkit-animation: fadeInRight .5s ease forwards;
+          animation: fadeInRight .5s ease forwards;
+  -webkit-animation-delay: .35s;
+          animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+          animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 50px;
+  font-family: 'Righteous', serif;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px auto;
+  display: inline-block;
+  position: relative;
+  height: 50%;
+}
+.overlay ul li {
   
+  height: 25%;
+  height: calc(100% / 4);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+  
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  text-overflow:ellipsis;
+  background-image: -webkit-linear-gradient(#FA2300,#E1037C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  line-height: 60px;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+.overlay ul li a:hover{
+-webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+.overlay ul li a:hover:before{
+-webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 3px;
+  
+  -webkit-transition: .35s;
+  transition: .35s;
+}
+.overlay ul li a:before{
+-webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.rotate {
+  font-family: "Righteous";
+  font-size: 8.5em;
+  height:180px;
+  overflow:hidden;
+  position:relative;
+  z-index:30;
+
+}
+
+.inner {
+  height:170px;
+  -webkit-transition:-webkit-transform 0.3s ease;
+  -webkit-backface-visibility:hidden;
+  
+}
+
 
