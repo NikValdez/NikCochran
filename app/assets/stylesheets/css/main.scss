@@ -3230,7 +3230,7 @@ label {
 }
 
 
-
+/* thoughts */
 
   #thoughts-title {
   text-align: center;
@@ -3248,10 +3248,19 @@ label {
     line-height: 0.20;
   }
 
+.post-body {
+  font-family: Lora,'Times New Roman',serif;
+  font-size: 25px;
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  float:none;
+}
+
+
 
 /* Menu */
-
-
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
 .transparent{
