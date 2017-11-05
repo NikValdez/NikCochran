@@ -1,7 +1,7 @@
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
-  background-color: #868e96;
+  background-image: url("https://s3.amazonaws.com/nikcochran.me/question.jpg");
   background-attachment: scroll;
   position: relative;
   -webkit-background-size: cover;
@@ -106,13 +106,21 @@ header.masthead {
   .post-preview > a > .post-title {
     font-size: 36px; } }
 
-
+.post-meta {
+  color: white;
+  &:hover {
+  color: #FFFF00;
+  }
+}
 
 .blog-heading {
   color: white;
   font-weight: 800;
   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-size: 80px;
+  &:hover {
+  color: #FFFF00;
+  }
 
 }
 
