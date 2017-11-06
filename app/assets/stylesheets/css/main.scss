@@ -3248,7 +3248,7 @@ label {
     line-height: 0.20;
   }
 
-.post-body {
+.post-body{
   font-family: Lora,'Times New Roman',serif;
   font-size: 25px;
   color: black;
@@ -3256,6 +3256,9 @@ label {
   text-align: center;
   margin: 0 auto;
   float:none;
+}
+.col-md-8, .col-lg-8 {
+  float: none;
 }
 
 
